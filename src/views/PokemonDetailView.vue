@@ -18,6 +18,7 @@
       <li v-for="(move, index) in importantMoves" :key="index" class="move">{{ move.move.name }}</li>
     </ul>
   </div>
+  <button class="volver"><router-link to="/">Volver</router-link></button>
 </template>
 
 <script>
@@ -102,5 +103,10 @@ li.stat {
 img {
   width: 200px;
   height: 210px;
+}
+
+.volver {
+  background-color: violet;
+  font-family: cursive;
 }
 </style>
